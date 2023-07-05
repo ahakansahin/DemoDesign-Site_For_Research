@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Search Country</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container justify-content-center gap-2 justify-content-md-between">
+
+            <a class="navbar-brand d-flex gap-2 align-items-center">Search Country<div
+                    class="spinner-border text-primary loading-icon" style="display: none;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div> </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Enter Country Name" aria-label="Search"
+                    id="search-input">
+                <button class="btn btn-outline-success me-2" type="submit" id="search-btn">Search</button>
+                <button class="btn btn-outline-primary" type="submit" id="location-btn">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="card mb-3 ">
+            <div class="card-header">Search Result</div>
+            <div class="warning text-center mt-3 ">Please Enter a Valid Country Name!</div>
+            <div class="card-body">
+                <div class="result-card" style="display: none;">
+                    <div class="img-responsive mb-2 mb-sm-0">
+                        <img src="" class="img-thumbnail" id="country-flag" alt="flag">
+                    </div>
+                    <div class="info ms-2 ">
+                        <div class="country-name">
+                            <h4></h4>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center mb-lg-2">
+                            <div class="info__keys col-6 col-sm-8 col-md-6">Population:</div>
+                            <div class="info__values col-6 col-sm-4 col-md-6" id="population-value">Value</div>
+                        </div>
+                        <div class="row align-items-center mb-lg-2">
+                            <div class="info__keys col-6 col-sm-8 col-md-6">Official Language:</div>
+                            <div class="info__values col-6 col-sm-4 col-md-6" id="language-value">Value</div>
+                        </div>
+                        <div class="row align-items-center mb-lg-2">
+                            <div class="info__keys col-6 col-sm-8 col-md-6">Capital:</div>
+                            <div class="info__values col-6 col-sm-4 col-md-6" id="capital-value">Value</div>
+                        </div>
+                        <div class="row align-items-center mb-lg-2">
+                            <div class="info__keys col-6 col-sm-8 col-md-6">Currency:</div>
+                            <div class="info__values col-6 col-sm-4 col-md-6" id="currency-value">Value</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-header">Neighboring Countries</div>
+            <div class="card-body">
+                <div class="neighbour-card" style="display: none;">
+                <div class="row">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

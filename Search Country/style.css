@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.img-responsive{
+    max-width: 100%;
+    display: block;
+}
+
+@media (min-width:520px){
+    .img-responsive{
+        display: inline-block;
+        max-width: 50%;
+    }
+}
+
+.info{
+    display: block;
+}
+
+
+@media (min-width:520px){
+    .info{
+        vertical-align: top;
+        display: inline-block;
+        width: 47%;
+    }
+}
+
+.neighbour{
+    font-size: 20px;
+    font-weight: 500;
+    scale: 1.2;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.neighbour img{
+    height: 150px;
+}
+
+.neighbour:hover{
+    cursor: pointer;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.warning{
+    background-color: rgb(236, 153, 153);
+    color: rgb(224, 16, 37);
+    display: none;
+}
